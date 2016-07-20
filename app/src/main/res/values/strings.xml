@@ -12,5 +12,6 @@
     <string name="java">Jave</string>
     <string name="android">Android</string>
     <string name="hobbies">Hobbies</string>
-
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
 </resources>
