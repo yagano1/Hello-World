@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import butterknife.BindView;
@@ -21,7 +23,16 @@ public class MainActivity extends AppCompatActivity {
     EditText textTel;
     @BindView(R.id.radioGender)
     RadioGroup radioGender;
-
+    @BindView(R.id.radioMale)
+    RadioButton radioMale;
+    @BindView(R.id.cbEnglish)
+    CheckBox cbEnglish;
+    @BindView(R.id.cbJapanese)
+    CheckBox cbJapanese;
+    @BindView(R.id.cbAndroid)
+    CheckBox cbAndroid;
+    @BindView(R.id.cbJava)
+    CheckBox cbJava;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("Name",textName.getText().toString());
                 bundle.putString("Address",textAddress.getText().toString());
                 bundle.putString("Tel",textTel.getText().toString());
-                bundle.putInt("Gender",radioGender.getCheckedRadioButtonId());
+                bundle.putBoolean("Gender",radioMale.isSelected());
+
                 startActivity(intent);
                 break;
             case R.id.btnClear:

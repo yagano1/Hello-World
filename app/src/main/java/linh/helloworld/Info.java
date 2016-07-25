@@ -18,6 +18,7 @@ public class Info extends AppCompatActivity {
         setContentView(R.layout.activity_info);
         ButterKnife.bind(this);
         Bundle bundle = getIntent().getExtras();
+        int gender = bundle.getInt("Gender");
         textViewName.setText(bundle.getInt("Gender"));
     }
 }

@@ -53,11 +53,13 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/female"/>
+                android:text="@string/female"
+                android:id="@+id/radioFemale"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/male"/>
+                android:text="@string/male"
+                android:id="@+id/radioMale"/>
         </RadioGroup>
     <LinearLayout
         android:layout_width="match_parent"
@@ -81,19 +83,23 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/english"/>
+        android:text="@string/english"
+        android:id="@+id/cbEnglish"/>
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/japaneses"/>
+        android:text="@string/japaneses"
+        android:id="@+id/cbJapanese"/>
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/java"/>
+        android:text="Java"
+        android:id="@+id/cbJava"/>
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/android"/>
+        android:text="@string/android"
+        android:id="@+id/cbAndroid"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
